@@ -2,16 +2,16 @@
         h2 {
             color: rgb(100, 35, 230);
         }  
-        #parrafo-azul {
+        #parrafo-red {
             background-color: red;
         }
         
-        #parrafo-gris {
-            background-color: grey;
+        #parrafo-verde {
+            background-color: green;
         }
         .fuente-arial {
             font-family: "Arial", "Palatino", serif;
-            font-size: 30px;
+            font-size: 50px;
         }
         body {
                 background-color: lightblue;
