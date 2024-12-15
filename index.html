@@ -1,68 +1,61 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Mi Página UNO</title> 
 </head>
+<body>
 
-  <body>
-
-
-
-
+<header>
+        <h1>Bienvenido a Mi PRIMERA Página Web que solo usa HTML</h1>
+        <h3> <a href="dos.html">SI PULSAS AQUÍ VERÁS MI SEGUNDA WEB que usa HTML y CSS</a></h3> 
+        <h3> <a href="tres.html">SI PULSAS AQUÍ VERÁS MI TERCERA WEB que usa HTML- CSS y JAVASCRIPT</a></h3> 
+</header>
     
-    <h1> MI tercera web, ahora SI, usando JAVASCRIPT</h1>
-    <h2 id="demo1"> <a href="index.html">SI PULSAS AQUÍ VERÁS MI PRIMERA WEB</a></h2>
-    <h2 id="demo2"> <a href="dos.html">SI PULSAS AQUÍ VERÁS MI SEGUNDA WEB que usa HTML y CSS</a></h2>
-   <!--
-     Arriba están enlazadas mis otras dos páginas 
-      
-  -->
-    <script>
-      
-      var nombre = prompt ("Escribe tu nombre: ");
-      document.write ("<h3 id='demo1'>El nombre que has introducido por teclado es: " +nombre);
-      document.write ("</h3>");
-      var numero1 = prompt ("Escribe tu numero favorito:");
-      var numero2 = prompt ("Escribe tu segundo numero favorito:");       
-      numero1 = Number(numero1);
-      numero2 = Number(numero2);
-      var resultado = numero1+numero2; //Muestra el resultado de la suma
-      resultado= resultado.toFixed(3); //redondea el resultado a tres decimales
-      document.write ("<h3 id='demo1'>El resultado de la suma es:" + resultado);
-      document.write ("</h3>");
-      document.write ("<h3 id='demo1'>El resultado de la multiplicación es:" + numero1*numero2);
-      document.write ("</h3>");
+<main>
+    En esta página puedes ver una lista ordenada con tres enlaces:
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Almer%C3%ADa">ALMERÍA</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Andaluc%C3%ADa">Andalucia</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Europa">Europa</a></li>
+        </ul>
+    <br>
+    <br>
+    Aquí he insertado una mapa del mundo, que yo he mismo he buscado en internet, he descargado y 
+    despues he subido en github aplicando un tamaño en concreto de 300 pixeles:
+     <br>
+    <img src="mapamundi-politico.png" alt="mapa del mundo" width="300"> 
+    <br>
+    <br>
+        
+    <table>
+            <thead>
+                <tr>
+                    <th>PAIS</th>
+                    <th>CAPITAL</th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ESPAÑA</td>
+                    <td>Madrid</td>
+                    
+                </tr>
 
-
-  
-      document.write (numero1 - numero2); // Resta
-      document.write ("<br>");
-      document.write (numero1 * numero2); // Multiplicación
-      document.write ("<br>");
-      document.write (numero1 / numero2); // División
-      document.write ("<br>");
-      document.write (numero1 % numero2); // Módulo
-      document.write ("<br>");
-      document.write (numero1 ** numero2); // Exponente
-      document.write ("<br><br><br>");
+                <tr>
+                    <td>FRANCIA </td>
+                    <td>París </td>
+                    
+                </tr>
+            </tbody>
+      </table>
+    <br>
+    <br>
+    En el siguiente parrafo voy a usar negrita, y cursiva usando solamente etiquetas HTML:
+    <p>Puedes <strong>contactarme </strong>a través de este <em>correo electrónico</em> jpermal075@g.educaand.es</p>
       
-      var edad = prompt ("¿Cuantos años tienes?");       
-      edad = Number(edad);
-      if (edad == 18) 
-              {
-              document.write("TIENES 18 AÑOS");
-              }
-              else {
-                if (edad > 18) 
-                  {
-                    document.write("Eres mayor de edad");
-                  }
-                else
-                  {
-                    document.write ("Aún eres joven!");
-                  }  
-              }      
-    </script>
-  </body>
+  </main>
+    
+    <footer>
+        <p>&copy; 2024 Mi primera página Web usando sólo HTML</p>
+    </footer>
 
-</html>
+</body>
