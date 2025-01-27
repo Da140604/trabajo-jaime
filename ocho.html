@@ -1,1 +1,29 @@
-
+<html>
+    <head>
+        <title>Mi Página OCHO</title> 
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>    
+   
+        <h1> Mi  WEB acerca de Fibonacci</h1>
+        <script>
+            var numero = prompt ("Escribe un numero del 1 al 100"); 
+          var suma = 0;
+            var i = 1;
+            if (numero<1 || numero >100) { 
+                        document.write ("Meh, El número introducido es incorrecto");
+                      }
+            else 
+                    {
+                          document.write ("A continuación verás la sucesión de fibonacci: ");
+                          document.write (numero);
+                          
+                          for (i = 1; i <= 100; i++) 
+                                {
+                                document.write ("<br>");
+                                document.write (numero + " x " + i + " = " + numero*i);
+                                }
+                    }
+        </script>
+</body>
+</html>
