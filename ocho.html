@@ -5,27 +5,31 @@
     </head>
     <body>    
    
-        <h1> Sucesión Fibonacci</h1>
-        <script>
-            var numero = prompt ("Escribe un numero del 1 al 100"); 
-          var suma = 0;
+        <h1> Mi octava WEB acerca de sumar x numeros</h1>
+          <script>
+            document.write ("<br>");
+            document.write ("<br>");
+            var numero =  prompt("Introduce un número entre 1 y 100:");  // Pedimos al usuario que introduzca un número
+            numero = Number(numero); // Convertimos el texto a numero
+
+            // Validamos que el número esté dentro del rango
+            while (numero < 1 || numero > 100) {
+            numero = prompt("Número inválido. Introduce un número entre 1 y 100:");
+            numero = Number (numero); // Convertimos el texto a numero
+            }
+                     
+            //Iniciamos las variables
+            var suma = 0; 
             var i = 1;
-            if (numero<1 || numero >100) { 
-                        document.write ("Meh, El número introducido es incorrecto");
-                      }
-            else 
-                    {
-                          document.write ("A continuación verás la sucesión de fibonacci: ");
-                          document.write (numero);
-                          
-                          for (i = 2; i < numero; i++) 
-                              suma = suma+1
-                               i = i+1
-                                {
-                                document.write ("<br>");
-                                document.write (numero + " x " + i + " = " + numero*i);
-                                }
-                    }
-        </script>
+
+            // Realizamos la suma desde 1 hasta el número introducido
+            for (i = 1; i <= numero; i++) {
+            suma = suma + i;
+            document.write ("<br>La suma de todos los numeros introducidos entre 1 y " + i + " es: " + suma);
+            }
+
+            // Mostramos el resultado en la página web
+            document.write ("<br><br>La suma TOTAL de todos los numeros introducidos entre 1 y " + numero + " es: " + suma);
+          </script>
 </body>
 </html>
