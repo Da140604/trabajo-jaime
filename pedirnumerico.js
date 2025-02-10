@@ -3,7 +3,7 @@ function saynumber(min, max) {
   do {
     numero = prompt("Ingresa un número entre " + min +" y " + max + ":");
     numero = Number(numero);
-  }  While ( numero < min || numero > max);
+  }  while ( numero < min || numero > max);
 
 return numero;
 }
