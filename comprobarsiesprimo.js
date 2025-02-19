@@ -10,7 +10,6 @@ for(i=numero-1; i>=2; i=i-1)
       return esprimo;
     }
     }
-esprimo = true;
-    
+esprimo = true;    
 return esprimo;
     }
