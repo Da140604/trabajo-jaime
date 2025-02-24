@@ -1,15 +1,15 @@
 function comprobarpar (numero)
   {
 var espar;
-    var i;
-for(i=numero-1; i>=2; i=i-1)
-  {
-    if ( numero % i == 0 )
+    
+
+  
+    if ( numero % i === 0 )
     {
-      espar = false;
+      espar = true;
       return espar;
     }
-    }
-noespar = true;    
+    
+noespar = false;    
 return noespar;
     }
