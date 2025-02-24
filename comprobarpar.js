@@ -4,7 +4,7 @@ var espar;
     
 
   
-    if ( numero % i === 0 )
+    if (numero % i === 0)
     {
       espar = true;
       return espar;
