@@ -1,15 +1,6 @@
-function comprobarpar (numero)
-  {
-var espar;
-    
 
-  
-    if (numero % 2 == 0)
-    {
-      espar = true;
-      return espar;
-    }
-    
-noespar = false;    
-return noespar;
-    }
+function esPar(numero) {
+    return numero % 2 === 0;
+}
+
+export { esPar };
