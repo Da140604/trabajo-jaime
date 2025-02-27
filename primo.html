@@ -1,26 +1,23 @@
 <html>
 <head>
-<title>
-PÁGINA WEB PARA COMPROBAR SI UN NÚMERO ES PRIMO 
-</title> 
+    <title>PÁGINA WEB PARA COMPROBAR SI UN NÚMERO ES PAR</title>
 </head>
 <body>
-  <script src="comprobarsiesprimo.js"> </script>
-  <script src="pedirnumerico.js"> </script>
-<script>
-  var numero;
-  numero = saynumber (1,1234);
-  document.write ("<h1>Mi página web para calcular si " +numero+ " es un numero primo </h1>");
-var esprimo;
-  esprimo = comprobarprimo (numero);
-if ( esprimo == true )
-{
-document.write (numero + " es un número primo.");
-}   
-  else
-  {
-    document.write ( numero + " no es primo.");
-  } 
-</script>   
+    <script src="comprobarpar.js"></script>
+    <script src="pedirnumerico.js"></script>
+    <script>
+        var numero;
+        numero = saynumber(1, 2048);
+        document.write("<h1>Mi página web para calcular si " + numero + " es un número par</h1>");
+
+        var espar;
+        espar = comprobarPar(numero);
+
+        if (espar == true) {
+            document.write(numero + " es un número par.");
+        } else {
+            document.write(numero + " no es par.");
+        }
+    </script>   
 </body>  
 </html>
