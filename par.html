@@ -1,27 +1,15 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title>
-PÁGINA WEB PARA COMPROBAR SI UN NÚMERO ES PAR
-</title> 
+    <meta charset="UTF-8">
+    <title>Comprobar número par</title>
+    <script src="comprobarSiEsPar.js"></script>
+    <script src="pedirNumero.js"></script>
 </head>
 <body>
-  <script src="comprobarpar.js"> </script>
-  <script src="pedirnumerico.js"> </script>
-<script>
-  var numero;
-  numero = saynumber (1,2048);
-  document.write ("<h1>Mi página web para calcular si " +numero+ " es un numero par </h1>");
-var espar;
-  espar == comprobarpar (numero);
-if ( espar == true )
-{
-document.write (numero + "  es un número par.");
-}   
-  else
-  {
-    document.write ( numero + "  no es par.");
-  } 
-</script>   
-</body>  
+    <script>
+        let numero = pedirNumero();
+        document.write(`<h1>El número ${numero} es ${comprobarSiEsPar(numero) ? "par" : "impar"}.</h1>`);
+    </script>
+</body>
 </html>
