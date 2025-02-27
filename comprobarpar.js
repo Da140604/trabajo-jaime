@@ -1,6 +1,4 @@
 
-function esPar(numero) {
+function comprobarPar(numero) {
     return numero % 2 === 0;
 }
-
-export { esPar };
