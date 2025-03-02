@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Números pares anteriores</title>
+    <script src="comprobarSiEsPar.js"></script>
+    <script src="pedirnumerico.js"></script>
+</head>
+<body>
+    <script>
+        let numero = pedirNumero();
+        document.write(`<h1>Números pares anteriores a ${numero}:</h1><ul>`);
+
+        for (let i = 1; i < numero; i++) {
+            if (comprobarsiespar(i)) {
+                document.write(`<li>${i}</li>`);
+            }
+        }
+
+        document.write(`</ul>`);
+    </script>
+</body>
+</html>
