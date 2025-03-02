@@ -1,15 +1,29 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Comprobar número par</title>
-    <script src="comprobarSiEsPar.js"></script>
-    <script src="pedirNumero.js"></script>
+
+
+  <title>PAGINA PARA VER SI LOS NUMEROS SON PARES </title>
 </head>
 <body>
-    <script>
-        let numero = pedirNumero();
-        document.write(`<h1>El número ${numero} es ${comprobarSiEsPar(numero) ? "par" : "impar"}.</h1>`);
-    </script>
-</body>
+ <script src="comprobarsiespar.js"></script>
+  <script src="pedirnumerico.js"> </script>
+<script>
+var numero;
+  numero = pedirNumeroEnRango (1,2048);
+  document.write ("<h1> Mi   para calcular si " +numero+ " es un numero PAR</h1>");
+  var espar;
+  esPar = comprobarsiespar (numero);
+  if (esPar == true )
+  {
+    document.write ( numero + " Es un numero PAR.");
+    
+  }
+else
+  {
+    document.write ( numero + "  es un numero IMPAR.");
+  }
+  
+ </script>
+  
+</body>  
 </html>
