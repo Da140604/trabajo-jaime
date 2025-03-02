@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Números pares anteriores</title>
-    <script src="comprobarSiEsPar.js"></script>
+    <script src="comprobarsiespar.js"></script>
     <script src="pedirnumerico.js"></script>
 </head>
 <body>
-    <script>
-        let numero = pedirNumero();
+   <script>
+var numero;
+  numero = saynumber (1,4096);
         document.write(`<h1>Números pares anteriores a ${numero}:</h1><ul>`);
 
-        for (let i = 1; i < numero; i++) {
+        for (var i = 1; i < numero; i++) {
             if (comprobarsiespar(i)) {
                 document.write(`<li>${i}</li>`);
             }
