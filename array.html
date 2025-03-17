@@ -3,16 +3,16 @@
 <title> WEB SOBRE ARRAYS </title>
 </head>
 <body>
-<script src="perdirnumerico.js"> </script>
+<script src="perdirnumero.js"> </script>
   <script>
 var numeros = [];
     var i;
     var favoritos;
     var numero;
-favoritos = saynumber (2,5);
+favoritos = saynumbermejorado ("Dime: cuantos números favoritos tienes entre",2,5);
     for (i=1; i <= favoritos; i = i+1 )
       {
-      numero = saynumber (10,100);
+      numero = saynumbermejorado ("Los números son:",10,100);
         numeros.push (numero);
       }
 document.write ("Los numeros favoritos seleccionados han sido:", numeros);
