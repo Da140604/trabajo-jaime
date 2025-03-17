@@ -1,4 +1,4 @@
-function saynumber(min, max) {
+function saynumber (min, max) {
   var numero;
   do {
     numero = prompt("Ingresa un número entre " + min +" y " + max + ":");
