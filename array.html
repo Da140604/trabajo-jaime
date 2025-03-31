@@ -1,25 +1,32 @@
 <html>
-<head>
-<title> WEB SOBRE ARRAYS </title>
-</head>
-<body>
-<script src="perdirnumero.js"> </script>
-  <script>
-var numeros = [];
+  <head>
+    <title> Web sobre arrays</title>
+     <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <script src="pedirNumero.js">
+   
+    </script>
+  
+    <script>
+    var numeros = []; 
     var i;
-    var favoritos;
-    var numero;
-favoritos = saynumbermejorado ("Dime: cuantos números favoritos tienes entre",2,5);
-    for (i=1; i <= favoritos; i = i+1 )
+    var favoritos; 
+    var numero; 
+     
+    favoritos = pedirNumeroEnRangoMejorado ("Dime: ¿Cuantos numeros favoritos tienes? entre ",1,5);
+   
+      
+    for (i=1; i <= favoritos; i = i+1 ) 
       {
-      numero = saynumbermejorado ("Los números son:",10,100);
-        numeros.push (numero);
+          numero = pedirNumeroEnRangoMejorado ("Escribe ahora tus numeros favoritos entre; ", 0,999);
+          numeros.push (numero);
+         
+
       }
-document.write ("Los numeros favoritos seleccionados han sido:", numeros);
-
-
+     document.write ("<h3>Los numeros favoritos introducidos han sido:<br> </h3>"); 
+     document.write("<span style='color:blue; font-size: 20px; font-weight: bold;'>" + numeros + "</span>");
     
-  </script>
-</body>
-
+    </script> 
+  </body>
 </html>
