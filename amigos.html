@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title> Web sobre amigos</title>
+     <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <script src="pedirnumero.js">
+   
+    </script>
+  
+    <script>
+    var amigos = []; 
+    var i;
+    var num_amigos; 
+    var amigo; 
+     
+    favoritos = saynumbermejorado ("Dime: ¿Cuantos amigos tienes? entre ",1,10);
+   
+      
+    for (i=1; i <= num_amigos; i = i+1 ) 
+      {
+          amigo = prompt ("Escribe ahora el nombre de tus amigos :");
+       amigos.push (amigo);
+         
+
+      }
+     document.write ("<h3>Los amigos introducidos han sido:<br> </h3>"); 
+     document.write("<span style='color:red; font-size: 50px; font-weight: bold;'>" + amigos + "</span>");
+    
+    </script> 
+  </body>
+</html>
