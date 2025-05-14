@@ -18,7 +18,9 @@ Signo_zodiacal: "Libra",
 Estado: "Viudo",
 Color: "morado",
   saludar () {
-    console.log ("HOLA A TODOS");
+  const output = document.getElementaryById('resultado-persona');
+    output.innerHTML= "HOLA A TODOS"
+    
   }
 };
 console.log(persona.nombre);
