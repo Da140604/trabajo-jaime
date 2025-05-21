@@ -6,11 +6,11 @@
   <H2>  MI PRIMER OBJETO:
   </H2>
   <button onclick="persona.saludar()"> SALUDAR</button>
-  <div id="resultado-persona"> Aquí aparecerán cositas </div>
+  <div id="resultado-persona">  </div>
   <h> MI SEGUNDO OBJETO: COCHE:</h>
     <button onclick="coche.arrancar()"> ARRANCAR</button>
   <button onclick="coche.parar()"> PARAR</button>
-  <div id="resultado-coche"> Aquí aparecerán cositas </div>
+  <div id="resultado-coche">  </div>
 <script>
 
   
@@ -44,7 +44,8 @@ encendido: false,
      return " El coche está parado";
   }
   },
- 
+   const output = document.getElementById('resultado-coche');
+    output.innerHTML = `HEL COCHE ESTÁ ${this.encendido} MODELO ${this.modelo} DEL AÑO $(this.año)`;
   
   console.log(persona.nombre);
 console.log(persona.edad);
