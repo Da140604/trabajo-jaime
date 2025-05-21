@@ -7,6 +7,10 @@
   </H2>
   <button onclick="persona.saludar()"> SALUDAR</button>
   <div id="resultado-persona"> Aquí aparecerán cositas </div>
+  <h> MI SEGUNDO OBJETO: COCHE:</h>
+    <button onclick="coche.arrancar()"> ARRANCAR</button>
+  <button onclick="coche.parar()"> PARAR</button>
+  <div id="resultado-coche"> Aquí aparecerán cositas </div>
 <script>
 
   
@@ -21,10 +25,28 @@ Color: "morado",
   saludar () {
   const output = document.getElementById('resultado-persona');
     output.innerHTML = `HOLA MI NOMBRE ES ${this.nombre} Y TENGO ${this.edad} AÑOS`;
-    
   }
 };
-console.log(persona.nombre);
+  const coche =
+    marca: "SEAT",
+  modelo: "LEÓN",
+  año: 1999,
+encendido: false,
+    arrancar () {
+    if ( this.encendido=false) 
+    { this.encendido = true;
+     return " El coche está encendido";
+    }
+  },
+  parar (){ 
+    if ( this.encendido = true) 
+    { this.encendido = false;
+     return " El coche está parado";
+  }
+  },
+ 
+  
+  console.log(persona.nombre);
 console.log(persona.edad);
 console.log(persona.Ciudad);
 console.log(persona.Signo_zodiacal);
