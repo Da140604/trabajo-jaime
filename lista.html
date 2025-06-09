@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lista de Tareas</title>
+</head>
+<body>
+
+<input type="text" id="taskInput" placeholder="Ingresa una tarea">
+<button onclick="addTask()">Agregar</button>
+
+<ul id="taskList">
+</ul>
+function addTask() {
+  const taskInput = document.getElementById("taskInput");
+  const taskList = document.getElementById("taskList");
+  const taskText = taskInput.value;
+
+  if (taskText !== "") {
+    const li = document.createElement("li");
+    li.textContent = taskText;
+
+    // Agregar un botón de eliminación a cada elemento de la lista
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Eliminar";
+    deleteButton.onclick = function() {
+      li.remove(); // Eliminar el elemento de la lista
+    };
+    li.appendChild(deleteButton);
+
+    taskList.appendChild(li); // Agregar el elemento a la lista
+    taskInput.value = ""; // Limpiar el input
+  }
+}
+<script src="script.js"></script>
+</body>
+</html>
